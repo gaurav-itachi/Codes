@@ -1,0 +1,19 @@
+Question Link : https://codeforces.com/contest/1250/problem/A
+
+Question Summary : 
+    - There are n no of posts 1 to n
+    - stream of m likes for posts
+    - for each like of post p 
+        if p is highest : nothing
+        else order of post p is swapped by one just above it
+    - find min and max pos for every post
+
+Constraints :
+ 1 <= n,m <= 10^5
+
+Solution :
+
+1.  - maintain min max and cur pos for all posts
+    - for every like update pos for the two posts affected by the like
+    - output min max for all posts
+    complexity = O(m+n)
